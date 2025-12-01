@@ -16,8 +16,8 @@ else if (età > 65) {
     sconto = 0.40;
 } 
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
+const prezzoFinale = (prezzoIniziale * (1 - sconto)).toFixed(2);
 // Output partite da semplice log, e poi se volete stampate in pagina come sapete fare.
-const prezzoFinale = prezzoIniziale * (1 - sconto);
 console.log(`Il prezzo del biglietto è di: € ${prezzoFinale}` );
 // alert(`Il prezzo del biglietto è di: € ${prezzoFinale}` );
 document.getElementById("prezzo-biglietto-iniziale").innerHTML = "Il prezzo del biglietto iniziale è di: € " + prezzoIniziale;
