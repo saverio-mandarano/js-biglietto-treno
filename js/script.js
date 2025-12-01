@@ -22,6 +22,7 @@ console.log(`Il prezzo del biglietto è di: € ${prezzoFinale}` );
 // alert(`Il prezzo del biglietto è di: € ${prezzoFinale}` );
 document.getElementById("prezzo-biglietto-iniziale").innerHTML = "Il prezzo del biglietto iniziale è di: € " + prezzoIniziale;
 document.getElementById("prezzo-biglietto-finale").innerHTML += ` € ${prezzoFinale}`
+document.getElementById("sconto").innerHTML += ` ${sconto * 100} %`;
 
 
 // TIP:
