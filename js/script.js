@@ -19,7 +19,9 @@ else if (età > 65) {
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
 // Output partite da semplice log, e poi se volete stampate in pagina come sapete fare.
 let prezzoFinale = prezzoIniziale * (1 - sconto);
-console.log(`Il prezzo del biglietto è di: € ${prezzoFinale}` )
+console.log(`Il prezzo del biglietto è di: € ${prezzoFinale}` );
+alert(`Il prezzo del biglietto è di: € ${prezzoFinale}` );
+
 
 // TIP:
 // per controllare che la vostra logica sui prezzi funzioni correttamente, provate a verificare quanto segue:
