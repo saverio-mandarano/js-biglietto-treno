@@ -4,7 +4,7 @@ const età= parseInt(prompt("Adesso inserisci l'età del passeggero:"))
 
 // Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
 // Il prezzo del biglietto è definito in base ai km (0.21 € al km)
-let prezzoIniziale= km * 0.21;
+const prezzoIniziale= km * 0.21;
 let sconto= 0;
 
 // va applicato uno sconto del 20% per i minorenni
@@ -17,9 +17,10 @@ else if (età > 65) {
 } 
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
 // Output partite da semplice log, e poi se volete stampate in pagina come sapete fare.
-let prezzoFinale = prezzoIniziale * (1 - sconto);
+const prezzoFinale = prezzoIniziale * (1 - sconto);
 console.log(`Il prezzo del biglietto è di: € ${prezzoFinale}` );
-alert(`Il prezzo del biglietto è di: € ${prezzoFinale}` );
+// alert(`Il prezzo del biglietto è di: € ${prezzoFinale}` );
+document.getElementById("prezzo-biglietto").innerHTML = `Il prezzo del biglietto è di: € ${prezzoFinale}`
 
 
 // TIP:
